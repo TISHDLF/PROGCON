@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="X"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-11-22 12:40:23 am"/>
+        <attribute name="created" value="WDtERVNLVE9QLUMzOTdQM0o7MjAxOS0xMS0yMjsxMjoyMjowOSBhbTsyNDMz"/>
+        <attribute name="edited" value="WDtERVNLVE9QLUMzOTdQM0o7MjAxOS0xMS0yMjsxMjo0MDoyMyBhbTsxOzI1Mzc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Number" type="Integer" array="False" size=""/>
+            <declare name="Odd" type="Integer" array="False" size=""/>
+            <declare name="Even" type="Integer" array="False" size=""/>
+            <output expression="&quot;Welcome! In this program, the value will be identified as an even or odd number.&quot;" newline="True"/>
+            <output expression="&quot;Please enter a value or a number&quot;" newline="True"/>
+            <input variable="Number"/>
+            <if expression="Number%2 == 0">
+                <then>
+                    <output expression="Number &amp; &quot; is an Even number, wow!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="Number &amp; &quot; is an Odd number, woah!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
