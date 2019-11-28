@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="X"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-11-29 03:08:42 am"/>
+        <attribute name="created" value="WDtERVNLVE9QLUMzOTdQM0o7MjAxOS0xMS0yOTswMTo0NDo0OCBhbTsyNDQ1"/>
+        <attribute name="edited" value="WDtERVNLVE9QLUMzOTdQM0o7MjAxOS0xMS0yOTswMzowODo0MiBhbTsxOzI1NDk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Rate" type="Integer" array="False" size=""/>
+            <declare name="Grade" type="Real" array="False" size=""/>
+            <output expression="&quot;Welcome! In this program, the equivalent of your grade will be computed using the rate of your grade.&quot;" newline="True"/>
+            <output expression="&quot;Let's get started! Please input the rate of your grade.&quot;" newline="True"/>
+            <input variable="Rate"/>
+            <if expression="Rate &gt;= 95">
+                <then>
+                    <assign variable="Grade" expression="4.0"/>
+                    <output expression="&quot;Excellent work, on the road to being a Dean's Lister! You have recieved a grade of &quot; &amp;Grade" newline="True"/>
+                </then>
+                <else>
+                    <if expression="Rate &gt;= 91">
+                        <then>
+                            <assign variable="Grade" expression="3.5"/>
+                            <output expression="&quot;Outstanding work, after all the breakdowns and struggles! You have recieved a grade of &quot; &amp;Grade" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="Rate &gt;= 87">
+                                <then>
+                                    <assign variable="Grade" expression="3.0"/>
+                                    <output expression="&quot;Wonderful, those sleepless nights and cramming sessions were worth it! You have recieved a grade of &quot; &amp;Grade" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="Rate &gt;= 83">
+                                        <then>
+                                            <assign variable="Grade" expression="2.5"/>
+                                            <output expression="&quot;Very Good, it's about time your efforts don't go unnoticed! You have recieved a grade of &quot; &amp;Grade" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="Rate &gt;= 79">
+                                                <then>
+                                                    <assign variable="Grade" expression="2.0"/>
+                                                    <output expression="&quot;Good job, keep this up and your grade could improve! You have recieved a grade of &quot; &amp;Grade" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="Rate &gt;= 75">
+                                                        <then>
+                                                            <assign variable="Grade" expression="1.5"/>
+                                                            <output expression="&quot;It's still possible to make up for those absences and missed requirements! You have recieved a grade of &quot; &amp;Grade" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <if expression="Rate &gt;= 70">
+                                                                <then>
+                                                                    <assign variable="Grade" expression="1.0"/>
+                                                                    <output expression="&quot;Catch up if you don't want to repeat this term! You have recieved a grade of &quot; &amp;Grade" newline="True"/>
+                                                                </then>
+                                                                <else>
+                                                                    <declare name="Repeat" type="String" array="False" size=""/>
+                                                                    <assign variable="Repeat" expression="&quot;R&quot;"/>
+                                                                    <output expression="&quot;Unfortunately, there is much improvement needed. You have recieved a grade of &quot; &amp;Repeat" newline="True"/>
+                                                                </else>
+                                                            </if>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
